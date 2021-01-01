@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&family=Space+Mono:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    padding: 3rem;
+    background-color: #FCECC9;
+    color: #333;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+article h1 {
+    font-size: 2rem;
+}
+
+article > p {
+    font-size: 1.8rem;
+}
+
+code {
+    display: block;
+    font-family: 'Space Mono', monospace;
+    padding: 2rem 0;
+}
+
+h2 {
+    font-weight:300;
+}
