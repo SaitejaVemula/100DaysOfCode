@@ -13,28 +13,39 @@ html {
 body {
     font-family: 'Poppins', Helvetica, Arial, sans-serif;
     padding: 3rem;
-    background-color: #FCECC9;
-    color: #333;
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-article h1 {
-    font-size: 2rem;
-}
-
-article > p {
+    background-color: #efefff;
+    color: #222;
     font-size: 1.8rem;
 }
+
+h1 { font-size: 4rem; text-align: center; }
+
+article { max-width: 50ch; margin: auto; padding: 2rem; background: #0b0d181c; border-radius: 10px;}
+article:first-child { margin: 4rem auto 8rem; }
+
+article h1 {font-size: 2rem; text-align: left; margin-bottom: 2rem;} 
 
 code {
     display: block;
     font-family: 'Space Mono', monospace;
-    padding: 2rem 0;
+    font-size: 2rem;
+    padding: 5px 10px;
+    background: #0b0d18;
+    color: #c7cffc;
+    border-radius: 4px;
+    margin-top: 1rem;
+    width: fit-content;
+}
+
+code span {
+    color: rgb(63, 160, 240);
+}
+
+section:not(:last-of-type) code {
+    margin-bottom: 3rem;
 }
 
 h2 {
     font-weight:300;
+    font-size: 1.7rem;
 }
