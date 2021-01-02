@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Day 1</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                height: 100vh;
+                background: #111;
+                color: #fff;
+                padding: calc(20px + 2vw);
+            }
+
+            h1 {
+                font-size: calc(22px + 3vw);
+                text-transform: uppercase;
+                color: rgba(255, 255, 255, 0.3);
+                font-weight: 900;
+                text-align: center;
+            }
+
+            ul {
+                list-style-type: none;
+                margin-top: 5vh;
+                height: 60vh;
+                display: grid;
+                grid-template-areas:
+                    "one  ."
+                    ". two"
+                    "three ."
+                    ". four";
+                align-items: stretch;
+                justify-items: stretch;
+            }
+
+            li {
+                padding: 20px;
+            }
+
+            li:nth-child(1) {
+                grid-area: one;
+            }
+            li:nth-child(2) {
+                grid-area: two;
+            }
+            li:nth-child(3) {
+                grid-area: three;
+            }
+            li:nth-child(4) {
+                grid-area: four;
+            }
+
+            li:hover {
+                background: #000;
+            }
+
+            a {
+                text-transform: uppercase;
+                font-weight: 900;
+                color: #fff;
+                text-decoration: none;
+                font-size: calc(20px + 1vw);
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Participants</h1>
+        <ul>
+            <li><a href="./karan/index.html">Karan</a></li>
+            <li><a href="./Manu/index.html">Manu</a></li>
+            <li><a href="./Saiteja/index.html">Saiteja</a></li>
+            <li><a href="./Trax/index.html">Trax</a></li>
+        </ul>
+    </body>
+</html>
