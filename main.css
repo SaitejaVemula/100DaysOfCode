@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap");
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::selection {
+    background: rgb(255, 240, 29);
+}
+
+body {
+    padding: calc(5px + 2vw);
+    font-family: Poppins, Helvetica, Arial, sans-serif;
+    max-width: 800px;
+    min-height: 100vh;
+    margin: auto;
+    font-size: calc(12px + 0.5vw);
+    background-image: repeating-radial-gradient(
+        circle at 120% -120%,
+        #0e0e0e,
+        #0e0e0e 30px,
+        #111 30px,
+        #111 60px
+    );
+    /* cursor: ; */
+}
+
+main {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #efefef;
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+}
+
+header {
+    padding: 20px;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to bottom right, white, rgb(255, 240, 29));
+    border-radius: 2px;
+}
+
+header h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+section h1 {
+    margin-bottom: 10px;
+}
+
+.days {
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 20px;
+    justify-content: center;
+}
+
+a,
+a:link,
+a:visited {
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 4px;
+    transition: background-color 0.2s, color, 0.2s, border-radius 0.4s;
+}
+
+a:nth-child(even):hover {
+    background-color: rgb(255, 240, 29);
+    color: black;
+    border-radius: 20px 2px 20px 2px;
+}
+
+a:nth-child(odd):hover {
+    background-color: rgb(255, 240, 29);
+    color: black;
+    border-radius: 2px 20px 2px 20px;
+}
+
