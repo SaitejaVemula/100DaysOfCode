@@ -1,12 +1,10 @@
 function init() {
     let scene = new THREE.Scene();
 
-    let box = getBox(1,1,1, 0xff0000);
-    let plane = getPlane(4, 0xff00ff);
+    let box = getBox(1,1,1, 0x777700);
+    let plane = getPlane(3, 0xffff00);
 
     plane.name = "plane-1";
-
-    // box.position.y = box.geometry.parameters.height / 2;
     plane.rotation.x = Math.PI/2;
 
     plane.add(box);
@@ -60,8 +58,8 @@ function update(renderer, scene, camera) {
     renderer.render(scene, camera);
 
     let plane = scene.getObjectByName('plane-1');
-    plane.rotation.x += 0.01;
-    plane.rotation.y -= 0.01;
+    plane.rotation.x += 0.05;
+    plane.rotation.y -= 0.02;
     plane.rotation.z += 0.03;
 
     requestAnimationFrame( function() {
