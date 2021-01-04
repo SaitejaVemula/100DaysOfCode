@@ -1,0 +1,24 @@
+*
+{
+    background-color: rgb(195, 255, 180);
+}
+
+.Flexbox-parent
+{
+    margin-top: 200px;
+    display: flex;
+    /* height: 300%; */
+    justify-content: space-around;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.Flexbox-children-1
+{  
+    border: 5px solid rgb(255, 0, 0); 
+}
+
+.Flexbox-children-2
+{
+    border: 5px solid rgb(255, 0, 0);
+    text-align: left;
+}
