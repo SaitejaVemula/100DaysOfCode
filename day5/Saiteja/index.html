@@ -4,8 +4,86 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Day 5</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap");
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: Manrope, Arial, Helvetica, sans-serif;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+
+            .card {
+                width: 480px;
+                height: 200px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: red;
+                position: relative;
+                border-radius: 10px;
+                background-image: linear-gradient(
+                        to bottom right,
+                        rgba(0, 0, 0, 0.9),
+                        rgba(0, 0, 0, 0.3)
+                    ),
+                    url("./BG.png");
+                background-position: center center, center center;
+                background-size: cover, cover;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            }
+
+            .img {
+                width: 240px;
+                height: 240px;
+                background-image: url("Jon.png");
+                background-size: cover;
+                border: 10px solid white;
+                border-radius: 150px;
+                position: absolute;
+                left: -150px;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+                transition: transform 0.3s;
+            }
+
+            .img:hover {
+                transform: rotate(-5deg) scale(1.1);
+            }
+
+            blockquote {
+                padding-left: 90px;
+                width: 400px;
+                position: absolute;
+                color: white;
+            }
+
+            blockquote p {
+                font-size: 25px;
+                font-weight: 800;
+            }
+        </style>
     </head>
     <body>
         <!-- Today is my BDay :P -->
+        <div class="card">
+            <div class="img"></div>
+            <blockquote>
+                <p>
+                    “They Were Born On The Wrong Side Of The Wall - Doesn't Make
+                    Them Monsters.”
+                </p>
+            </blockquote>
+        </div>
+        <!-- <footer>
+            <p>100 days of code</p>
+            <p>Day 5</p>
+        </footer> -->
     </body>
 </html>
