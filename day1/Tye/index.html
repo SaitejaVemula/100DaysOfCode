@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 1 - Git</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #2a2a2a;
+            border-bottom: solid 1px black;
+            color: #dcdcdc;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 14px 12px;
+        }
+
+        .header h2 {
+            margin: auto 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        .title {
+            margin: 18px auto;
+            text-align: center;
+        }
+
+        .title h2 {
+            font-size: 3rem;
+        }
+
+        .contents h3 {
+            text-align: center;
+            margin: 16px auto;
+        }
+
+        .code-format {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #2a2a2a;
+            color: #dcdcdc;
+            padding: 6px;
+            width: fit-content;
+        }
+
+        .meaning {
+            margin: 14px auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>TYE://100-days-of-code</h1>
+        <h2>Day 1 of 100</h2>
+    </div>
+    <main>
+        <div class="title">
+            <h2>Git</h2>
+            <p>Distributed Version Control System</p>
+        </div>
+        <div class="definition">
+            <ul>
+                <li>Git can be used to store content — it is mostly used to store code due to the other features it provides.</li> <br>
+                <li>The code which is stored in Git keeps changing as more code is added. Also, many developers can add code in parallel. So Version Control System helps in handling this by maintaining a history of what changes have happened.</li>
+            </ul>
+        </div>
+        <div class="contents">
+            <h3>Basic Git Commands</h3>
+            <div>
+                <p class="code-format">git --version</p> 
+                <p class="meaning">is used to verify if Git is installed</p>
+                <p class="code-format">cd repository-name</p>
+                <p class="code-format">git init</p>
+                <p class="meaning">adds a local Git repository "repository-name"</p>
+                <p class="code-format">git add index.html</p>
+                <p class="meaning">staging the file "index.html"</p>
+                <p class="code-format">git add .</p>
+                <p class="meaning">if you want to add all the files to the staging area</p>
+                <p class="code-format">git status</p>
+                <p class="meaning">used to find out information regarding what files are modified and what files are there in the staging area</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
