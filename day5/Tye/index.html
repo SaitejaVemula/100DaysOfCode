@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - Quote</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            background-color: #2a2a2a;
+            border-bottom: solid 1px black;
+            color: #dcdcdc;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 14px 12px;
+        }
+
+        .header h2 {
+            margin: auto 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            background: linear-gradient(90deg, rgba(1,207,0,1) 0%, rgba(255,255,255,1) 50%, rgba(250,188,116,1) 100%);
+            width: 600px;
+            margin: 120px auto 0;
+            border-radius: 11px;
+            box-shadow: 2px 2px 10px #333333;
+        }
+
+        .quo-container {
+            align-self: center;
+            margin: auto 25px;
+            text-transform: uppercase;
+            font-family: "PT Serif", serif;
+        }
+
+        .quote {
+            text-align: justify;
+            line-height: 1.2;
+        }
+
+        .name {
+            text-align: right;
+            margin-top: 16px;
+            color: #525252;
+        }
+
+        #quote-img {
+            border-radius: 50%;
+            border: 5px solid green;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>TYE://100-days-of-code</h1>
+        <h2>Day 5 of 100</h2>
+    </div>
+    <main>
+        <div class="img-container">
+            <figure>
+                <img id="quote-img" src="images/conor.jpg" alt="conor-mcgregor">
+            </figure>
+        </div>
+        <div class="quo-container">
+            <h3 class="quote">“Doubt is only removed by action. If you’re not working then that’s where doubt comes in."</h3>
+            <p class="name">"The Notorious" Conor Mcgregor</p>
+        </div>
+    </main>
+</body>
+</html>
