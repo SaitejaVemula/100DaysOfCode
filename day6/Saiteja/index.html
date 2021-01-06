@@ -4,8 +4,84 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Day 6</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: sans-serif;
+                text-transform: uppercase;
+            }
+            .container {
+                /* border: 2px solid black; */
+                border-radius: 10px;
+                width: 100vw;
+                max-width: 1200px;
+                height: 80vh;
+                position: relative;
+                overflow: hidden;
+            }
+            .container img,
+            svg {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                min-width: 600px;
+                width: 100%;
+                height: auto;
+            }
+
+            svg {
+                z-index: 2;
+                mix-blend-mode: multiply;
+            }
+
+            .changeColor {
+                position: absolute;
+                bottom: 20px;
+                right: 20px;
+                z-index: 3;
+            }
+
+            .cls-1 {
+                fill: transparent;
+            }
+        </style>
     </head>
     <body>
-        <!-- Hello -->
+        <div class="container">
+            <svg
+                id="Layer_1"
+                data-name="Layer 1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 1920 1280"
+            >
+                <path
+                    class="cls-1"
+                    d="M638.5 357.5l-33-34s-19-14-24 16c0 0-2 19 27 52l47 54 40 41 43 40 31 29 44 43 31 35s29 42 32 68c0 0 117 112 204 149 0 0 22-107-84-198l-146-114-108-85M579 720l211 8-70-47s-96-1-116 12c0 0-26 13-25 27z"
+                />
+            </svg>
+            <img src="./assets/shoe-img.jpg" alt="Shoe Image" />
+            <div class="changeColor">
+                <label for="color">Change Color : </label>
+                <input type="color" id="color" />
+            </div>
+        </div>
+        <script>
+            const svg = document.querySelector(".cls-1");
+            const color = document.querySelector("input");
+
+            color.addEventListener("input", (e) => {
+                console.log(color.value);
+                svg.style.fill = color.value;
+            });
+        </script>
     </body>
 </html>
