@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.2em;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: white;
+    
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    background: linear-gradient( to right, rgb(114, 36, 49), red);
+    border-radius: 8px;
+}
+
+.image {
+    background: url(./lerone-pieters-jFr0pmCqOpM-unsplash.jpg);
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 6px solid white;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    right: 50px;
+}
+
+
+p{
+    padding-right: 2rem;
+}
+
+
+
+
+
+
+
