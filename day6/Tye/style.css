@@ -1,0 +1,128 @@
+/**********************TAG SELECTORS**********************/
+html, body {
+    position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    margin: 0px;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+h3, p {
+    margin: 5px auto;
+}
+
+hr {
+    height: 1px;
+    color: hsl(0, 0%, 59%);
+}
+
+
+
+/**********************CLASS SELECTORS**********************/
+
+.container {
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    width: 45%; height: auto;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+.bkg-container-top {
+    background: url("images/bg-pattern-card.svg");
+    height: 110px;
+    margin-bottom: -50px;
+}
+
+.victor-img {
+    display: block;
+    margin: 0 auto;
+    border: 4px solid white; border-radius: 50%;
+    width: 96px; height: 96px;
+}
+
+.name, .age, .follower-stats, .likes-stats, .photos-stats {
+    display: inline-block;
+}
+
+.bio, .stats, .follower-stats, .likes-stats, .photos-stats {
+    text-align: center;
+}
+
+.follower-stats, .likes-stats, .photos-stats {
+    margin: 0 auto;
+}
+
+
+.name, .age, .count {
+    font-size: 1.8rem;
+}
+
+.age {
+    font-weight: 400; color: hsl(0, 0%, 59%);
+    margin-left: 6px;
+}
+
+.place, .desc {
+    font-weight: 400; 
+    color: hsl(0, 0%, 59%);
+}
+
+.place {
+    font-size: 1.3rem;
+}
+
+.desc {
+    letter-spacing: 2.5px;
+    font-size: 0.9rem;
+}
+
+.bio {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin: 33px auto;
+}
+
+.stats {
+    display: flex;
+    margin: 34px 16px;
+}
+
+
+.bg-top, .bg-bottom {
+    position: absolute;
+}
+
+.bg-top {
+    top: -530px; left: -357px;
+}
+
+.bg-bottom {
+    top: 290px; right: -300px;
+}
+
+
+/**********************ID SELECTORS**********************/
+
+@media (max-width: 900px) {
+    .name, .age, .count {
+        font-size: 1.4rem;
+    }
+
+    .place {
+        font-size: 1rem;
+    }
+
+    .bio {
+        margin: 12px auto;
+    }
+
+    .desc {
+        letter-spacing: 2px;
+        font-size: 0.7rem;
+    }
+}
