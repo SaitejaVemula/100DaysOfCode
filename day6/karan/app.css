@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+img {
+    display: block;
+    width: 100%;
+}
+
+body {
+    
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+}
+
+
+
+.lists {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(204, 15, 15, 0.4);
+    list-style: none;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    background: url(./julius-drost-3X1WIhuCr88-unsplash.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    line-height: ;
+}
+
+p {
+    padding: 10px;
+    line-height: 1.5rem;
+}
