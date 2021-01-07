@@ -28,14 +28,26 @@ body{
     background-attachment: fixed;
 }
 
-.border {
+.border2 {
     position: absolute;
     top: 50%;
     left: 33.33%;
     text-align: center;
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: rgba(0,0,0,0.7);
+    background: linear-gradient(hsla(274, 45%, 71%, 0.6), hsla(220, 52%, 70%, 0.6));
     padding: 25px 25px;
     border-radius: 20px;
+}
+
+.border1 {
+    position: absolute;
+    top: 50%;
+    left: 33.33%;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(rgb(222, 215, 244, 0.7),rgb(250, 172, 168, 0.7));
+    padding: 25px 25px;
+    border-radius: 20px
 }
