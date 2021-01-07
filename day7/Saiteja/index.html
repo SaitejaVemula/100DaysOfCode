@@ -4,8 +4,60 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Day 7</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap");
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            ::selection {
+                background: rgb(231, 67, 67);
+                color: rgb(255, 186, 38);
+            }
+            body {
+                overflow-x: hidden;
+            }
+            h1 {
+                font-family: "Syne";
+                text-transform: uppercase;
+                font-size: calc(30px + 3vw);
+                background: rgba(255, 255, 255, 0.05);
+                color: white;
+                padding: 5vw 10vw;
+                backdrop-filter: blur(30px);
+                border-radius: 10px;
+                border: 1px solid white;
+                width: fit-content;
+                text-shadow: 5px 5px 0 rgba(0, 0, 0, 0.5),
+                    5px 5px 10px rgba(0, 0, 0, 0.8);
+                box-shadow: 0 0 40px rgba(0, 0, 0, 0.5),
+                    inset 0 0 10px rgba(0, 0, 0, 0.2);
+            }
+            section {
+                width: 100vw;
+                height: 100vh;
+                background-size: cover;
+                background-position: center center;
+                background-attachment: fixed;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            section:first-child {
+                background-image: url("./day.jpg");
+            }
+            section:last-of-type {
+                background-image: url("./night.jpg");
+            }
+        </style>
     </head>
     <body>
-        <!-- Hello, World! -->
+        <section>
+            <h1>Day</h1>
+        </section>
+        <section>
+            <h1 class="second">Night</h1>
+        </section>
     </body>
 </html>
