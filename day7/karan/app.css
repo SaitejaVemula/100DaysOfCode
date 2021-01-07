@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+}
+
+.image1 {
+    background-image:url(./marcelo-cidrack-J5y5cwflTLQ-unsplash.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.image2 {
+    background-image: url(./sheng-li-WqqL-Y7EeFE-unsplash.jpg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.image1, .image2 {
+    position: relative;
+    background-attachment: fixed;
+}
+
+.border {
+    position: absolute;
+    top: 50%;
+    left: 33.33%;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgba(0,0,0,0.7);
+    padding: 25px 25px;
+    border-radius: 20px;
+}
