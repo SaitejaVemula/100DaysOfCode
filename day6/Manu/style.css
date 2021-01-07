@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.madara {
+  display: flex;
+  margin: 300px auto;
+  background-color: rgb(37, 32, 32);
+  align-items: center;
+  width: 580px;
+  height: 200px;
+}
+
+.para {
+  font-size: 25px;
+  color: rgb(238, 77, 77);
+
+  position: relative;
+  left: 13%;
+}
+
+img {
+  border-radius: 50%;
+  border: 10px solid white;
+  position: absolute;
+  right: 60%;
+}
