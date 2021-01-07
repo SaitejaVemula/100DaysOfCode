@@ -1,0 +1,84 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parallax-1 {
+
+    position: relative;
+    height: 100%;
+
+    /* The image used */
+    /* background-image: url("https://images3.alphacoders.com/558/thumb-1920-558832.jpg"); */
+    background-image: url("https://i.ytimg.com/vi/FyEozKUyHiw/maxresdefault.jpg");
+
+
+    /* Set a specific height */
+    min-height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-1 div {
+    background-color: #f8f8e5bb;
+    width: fit-content;
+    height: fit-content;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    box-shadow: 8px 8px 55px black;
+    text-align: center;
+}
+
+.parallax-1 div h1 {
+    color: #29292b;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 9rem;
+    padding: 67px 24px;
+    text-shadow: 3px 3px 5px black;
+}
+
+.parallax-2 {
+
+
+    position: relative;
+    height: 100%;
+
+    background-image: url("https://i.ytimg.com/vi/l8jdu9H3tU8/maxresdefault.jpg");
+
+    min-height: 100vh;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-2 div {
+    background-color: rgba(44, 43, 43, 0.815);
+    width: fit-content;
+    height: fit-content;
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    text-align: center;
+}
+
+.parallax-2 div h1 {
+    color: #888f2f;
+    font-family: 'Dancing Script', cursive;
+    font-size: 9rem;
+    padding: 20px 40px;
+    text-shadow: 3px 3px 5px #222222;
+}
+
+#bubbly {
+    font-family: 'Fredoka One', cursive;;
+}
