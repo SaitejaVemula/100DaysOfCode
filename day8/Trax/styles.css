@@ -1,0 +1,22 @@
+.flex-parent
+{
+    margin-top: 15%;
+    margin-left: 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    font-family: 'East Sea Dokdo', cursive;
+    font-size: 50px;
+    height: 200%;
+}
+
+#lorem-ipsum
+{
+    font-size: 20px;
+}
+
+.flex-child-2
+{  
+    height: 200%;
+
+}
