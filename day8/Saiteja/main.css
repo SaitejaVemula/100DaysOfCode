@@ -3,7 +3,6 @@
     src: url('./font/Maragsâ-Display.otf') format('truetype');
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 * {
@@ -19,7 +18,7 @@
     --color-secondary: #542400;
 }
 body {
-    font-family: 'Maragsa Display';
+    font-family: 'Maragsa Display', serif;
     padding: 20px;
     background: var(--color-light);
     color: var(--color-dark);
@@ -61,7 +60,7 @@ h1 {
 
 p {
     /* font-family: "Roboto Slab"; */
-    font-family: "Poppins";
+    font-family: "Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--color-secondary);
     margin: 20px 0;
     line-height: 1.5;
