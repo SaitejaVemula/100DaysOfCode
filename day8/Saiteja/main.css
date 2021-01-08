@@ -3,17 +3,84 @@
     src: url('./font/Maragsâ-Display.otf') format('truetype');
 }
 
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+:root {
+    --color-light: #F8F5EF;
+    --color-dark: #0C0901;
+    --color-primary: #ED6F13;
+    /* --color-secondary: #1B1506; */
+    --color-secondary: #542400;
+}
 body {
     font-family: 'Maragsa Display';
     padding: 20px;
+    background: var(--color-light);
+    color: var(--color-dark);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::selection {
+    background-color: var(--color-dark);
+    color: var(--color-primary);
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    border: 0.5px solid var(--color-primary);
+}
+
+.card__text {
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 auto;
+}
+
+.card__img {
+    flex: 1 1 auto;
+    background-image: repeating-linear-gradient(135deg, var(--color-primary) 0px, var(--color-primary) 10px, var(--color-secondary) 10px, var(--color-secondary) 20px);
+    min-height: 250px;
+    min-width: 250px;
 }
 
 h1 {
-    font-size: 80px;
-    text-align: center;
+    font-size: 56px;
+    /* text-align: center; */
+    color: var(--color-primary);
+}
+
+p {
+    /* font-family: "Roboto Slab"; */
+    font-family: "Poppins";
+    color: var(--color-secondary);
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+p:last-child {
+    width: max-content;
+    border-bottom: 2px solid var(--color-primary);
+    padding: 2px 5px;
+    font-family: 'Maragsa Display';
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s 0.2s;
+}
+
+p:last-child:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-light);
 }
