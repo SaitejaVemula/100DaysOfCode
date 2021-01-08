@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Maragsa Display';
+    src: url('./font/Maragsâ-Display.otf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Maragsa Display';
+    padding: 20px;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+}
