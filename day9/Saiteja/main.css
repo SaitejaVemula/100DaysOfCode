@@ -22,7 +22,7 @@ body {
     background: var(--color-bg);
     color: var(--color-text);
     margin: 0 auto;
-    max-width: 1200px;
+    /* max-width: 1200px; */
 }
 
 .accent {
@@ -31,14 +31,19 @@ body {
 
 nav {
     position: fixed;
+    z-index: 10;
     top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 40px;
     background: #000;
+    border-left: 2px solid var(--color-accent);
+    border-right: 2px solid var(--color-accent);
 }
 
 nav .logo {
@@ -53,8 +58,8 @@ nav p:not(.logo) {
 }
 
 header {
-    margin-top: 5vh;
-    height: 80vh;
+    margin-top: 80px;
+    height: calc(100vh - 80px);
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -77,10 +82,77 @@ header h1 {
 header h1 span {
     display: block;
     font-weight: 700;
+    padding: 0 10px;
+    border-left: 1px solid var(--color-accent);
+    border-right: 1px solid var(--color-accent);
 }
 
 img {
     display: block;
-    margin: auto;
+    margin: 0 auto;
     max-width: 90vw;
+}
+
+.bike {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    padding: 4vw;
+    background: #333;
+}
+
+.bike__img {
+    margin: 20px;
+    position: relative;
+    border: 1px solid var(--color-accent);
+}
+
+.bike__img::before, .bike__img::after {
+    content: '';
+    position: absolute;
+    background: #333;
+    z-index: 2;
+    width: 15px;
+}
+
+.bike__img::before {
+    top: -2px;
+    left: -2px;
+    height: 45%;
+    border-right: 2px solid var(--color-accent);
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 20px), 0% 100%);
+}
+
+.bike__img::after {
+    bottom: -2px;
+    right: -2px;
+    height: 25%;
+    border-left: 2px solid var(--color-accent);
+    clip-path: polygon(0% 20px, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.bike__name {
+    font-size: calc(24px + 3vw);
+}
+
+.bike__price {
+    font-size: calc(40px + 4vw);
+}
+
+.bike__price span {
+    font-size: calc(10px + 2vw);
+    color: var(--color-accent);
+}
+
+.bike__buy {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    color: var(--color-accent);
+    border: 2px solid var(--color-accent);
+    padding: 8px 16px;
+    margin: 10px auto 40px;
 }
