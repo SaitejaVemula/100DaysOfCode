@@ -7,12 +7,14 @@ menu.addEventListener('click', function () {
 })
 
 document.querySelector('#view-model').addEventListener('click', function () {
-    const images = document.querySelector('#images').position().top;
+//     const images = document.querySelector('#images').position().top;
 
-    document.querySelector('html, body').animate(
-        {
-            scrollTop: images
-        },
-        900
-    );
+//     document.querySelector('html, body').animate(
+//         {
+//             scrollTop: images
+//         },
+//         900
+//     );
+    const images = document.querySelector('#images');
+    images.scrollIntoView();
 });
