@@ -2,10 +2,12 @@
 {
     display: flex;
     flex-direction: column;
-    height: 100px;
-    padding: 0px;
-    margin-left: 200px;
-    margin-right: 200px;
+    height: 75vh;
+    width: 50vw;
+    margin-left: 25vw;
+    /* margin-right: 20px; */
+    align-items: center;
+    justify-content: center;
 }
 
 .flex-parent-2
@@ -16,10 +18,18 @@
     align-items: center;
     justify-content: flex-start;
     color: rgb(255, 255, 255);
-    height: 50px;
+    height: 10%;
+    width: auto;
 }
 
 .flex-parent-3
 {
     size: contain;
+}
+
+.flex-parent-4
+{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
