@@ -22,7 +22,7 @@
         }
 
         .card {
-            background-image: linear-gradient(to bottom right, rgb(230, 140, 39), rgb(235, 68, 68));
+            background-image: linear-gradient(to bottom right, rgb(141, 163, 187), rgb(49, 96, 146));
             color: white;
             font-size: 24px;
             padding: 20px 40px;
@@ -38,39 +38,43 @@
 
         .card:hover {
             width: 300px;
+            box-shadow: 0 20px 60px -10px rgba(33, 85, 141, 0.25);
         }
 
         .img {
             position: absolute;
             width: 200px;
             height: 200px;
+            border: 0px solid white;
             border-radius: 4px;
             top: 0px;
             left: 0px;
-            background: url('../rishi/images/jsnow.jpg') no-repeat center center;
+            background: url('../../day5/Saiteja/Jon.png') no-repeat center center;
             background-size: cover;
             z-index: 2;
-            transition: transform 0.2s, border-radius 0.2s, left 0.2s;
+            transition: transform 0.4s, border-radius 0.2s, left 0.2s, border 0.1s;
         }
 
         .card:hover .img {
             left: 50px;
+            border: 10px solid white;
             border-radius: 100px;
-            transform: scale(0.5) translateY(-200px);
+            transform: scale(0.65) translateY(-170px);
         }
 
         .card p {
             position: relative;
             opacity: 0%;
-            bottom: -150px;
+            bottom: -100px;
             transition: opacity 0.2s 0.2s, bottom 0.2s 0.2s;
             text-align: center;
+            visibility: hidden;
         }
 
         .card:hover p {
             bottom: 0;
             opacity: 100%;
-            z-index: 2;
+            visibility: visible;
         }
     </style>
 </head>
