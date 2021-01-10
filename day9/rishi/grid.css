@@ -1,0 +1,20 @@
+body {
+	background: #1E1E1E;
+}
+.gallery-height {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	max-height: 700px;
+	align-content: center;
+}
+.img {
+	width: 30%;
+	margin: 5px;
+	color: aliceblue;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 45px;
+	border-radius: 2px;
+}
