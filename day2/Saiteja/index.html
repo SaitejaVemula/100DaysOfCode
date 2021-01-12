@@ -1,13 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Day 2</title>
-    </head>
-    <body>
-        I've made index.html pages for the repo, and for day1 Links are
-        https://saitejavemula.github.io/100DaysOfCode/index.html
-        https://saitejavemula.github.io/100DaysOfCode/day1/index.html
-    </body>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 2</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            text-align: center;
+            font-family: 'Syne', Arial, Helvetica, sans-serif;
+            height: 100vh;
+            max-width: 800px;
+            padding: 20px;
+            margin: auto;
+        }
+
+        h1 {
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        img {
+            display: block;
+            max-width: 300px;
+            margin: 40px auto;
+            border-radius: 5px;
+            box-shadow: 0 40px 100px -20px rgba(0, 0, 0, 0.5);
+            transition: transform 0.1s;
+        }
+
+        .images:hover img:not(:hover) {
+            transform: scale(0.95);
+            filter: blur(3px);
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: 900;
+            display: inline-block;
+            padding: 5px 10px;
+            margin: 5px;
+            color: white;
+            text-decoration: none;
+            background: linear-gradient(to bottom right, rgb(252, 248, 47), rgb(253, 115, 35));
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            transition: transform 0.1s;
+        }
+
+        a:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Day 2</h1>
+    <p>I've made <a href="https://saitejavemula.github.io/100DaysOfCode/index.html">index.html</a> pages for the repo,
+        and for <a href="https: //saitejavemula.github.io/100DaysOfCode/day1/index.html">day#/index.html</a>
+    </p>
+    <div class="images">
+        <img src="./main-index-page.png" alt="Main Index Page Image">
+        <img src="./day-index-page.png" alt="Day Index Page Image">
+    </div>
+</body>
+
 </html>
