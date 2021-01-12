@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="basic github and git commands">
+    <meta name="keywords" content="git, github, basic commands">
+    <meta name="author" content="CaptainV">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100Days of Code - Day 01 - Git Basics</title>
+    <link rel="stylesheet" href="mygitstyle.css">
+</head>
+
+<body>
+    <div class="wrapper">
+    <header>
+        <h1>[Basics of Git]</h1>
+    </header>
+    <main>
+        <article>
+            <h2>Git Basic Concepts</h2>
+            <section>
+                <p>There are centralized and distributed workflows. Centralized depends on a central server with everyone working off it. However, if the server is down, no one will be able to work or collaborate. Scalability is also more difficultas it depends on the server being able to handle capacity.</p>
+                <p>Distributed version control allows every team member has a copy of work and its history on a local machine. If the server is offline, work can still be synchronized with each other.</p>
+                <p>Git is a Version Control System (VCS) for distributed (decentralized) version control which allows multiple developers to coordinate work across the world.</p>
+                <p>Github, meanwhile, is an example of a popular repository.</p>
+            </section>
+            <section>
+                <a href="#hide1" id="hide1" class="hide">+ Why Git?</a>
+                <a href="#show1" id="show1" class="hide">- Why Git?</a>
+                <div id="details1" class="details">
+                    <ul class="list">
+                        <li>Free</li>
+                        <li>Open Source</li>
+                        <li>Fast</li>
+                        <li>Scalable</li>
+                        <li>Cheap branching/merging options</li>
+                        <li>Most compatable with current world standard use</li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <a href="#hide2" id="hide2" class="hide">+ What it does</a>
+                <a href="#show2" id="show2" class="show">- What it does</a>
+                <div id="details2" class="details">
+                    <ul class="list">
+                        <li>Coordinates work between multiple developers</li>
+                        <li>Keeps track of changes/history and when they were made by taking "snapshots" of work files</li>
+                        <li>Allows you to take a snapshot by making a "Commit"</li>
+                        <li>You can revisit any snapshot at any time</li>
+                        <li>You can stage files before committing</li>
+                        <li>Allows for programs to revert to a previous version in the history</li>
+                        <li>Local and remote work options</li>
+                        <li>Other workers can pull work onto their machines</li>
+                        <li>Can create branches</li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <hr>
+        <article>
+            <section>
+                <h2>Using GIT</h2>
+                    <p>
+                        <span class="bold-text">Command line:</span> benefit - GUI tools have limitations or may not be available at all times.
+                    </p>
+                    <p>
+                        <span class="bold-text">Code Editors & IDE with git supported extensions:</span> VS Code - Gitlens, etc.
+                    </p>
+                    <p>
+                        <span class="bold-text">Graphical User Interfaces (GUI) clients:</span> gitkraken, sourcetree, etc.
+                    </p>
+            </section>
+            <section>
+                <a href="#hide3" id="hide3" class="hide">+ Settings</a>
+                <a href="#show3" id="show3" class="show">- Settings</a>
+                <div id="details3" class="details">
+                    <ul class="list">
+                        <li>
+                            <span class="bold-text">Name</span>: <code>user.name</code>
+                        </li>
+                        <li>
+                            <span class="bold-text">Email:</span> <code>user.email</code>
+                        </li>
+                        <li>
+                            <span class="bold-text">Default editor:</span> <code>core.editor</code>
+                        </li>
+                        <li>
+                            <span class="bold-text">Line Ending</span>
+                        </li>
+                        <li>
+                            <span class="bold-text">System:</span> all users
+                        </li>
+                        <li>
+                            <span class="bold-text">Global:</span> all repositories of the current user
+                        </li>
+                        <li>
+                            <span class="bold-text">Local:</span> current or folder
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section>
+                <a href="#hide4" id="hide4" class="hide">+ Windows vs MAC/Linux</a>
+                <a href="#show4" id="show4" class="show">- Windows vs MAC/Linux</a>
+                <div id="details4" class="details">
+                    <p>
+                        <code>\r</code> carriage return
+                    </p>
+                    <p>
+                        <code>\n</code> line feed
+                    </p>
+                    <p>
+                    <span class="bold-text">Windows:</span> This is a sentence <code>\r\n</code>
+                    </p>
+                    <p>
+                    <span class="bold-text">Mac/Linux:</span> This is a sentence <code>\n</code>
+                    </p>
+                    <p>
+                        <code>core.autocrlf</code> configure this setting to prevent line and end issues between OS on a
+                        project (Not everyone will be using the same OS).
+                    </p>
+                    <p>
+                    <span class="bold-text">Windows:</span> <code>git config --global core.autocrlf true</code>
+                    </p>
+                    <p>
+                    <span class="bold-text">Mac/Linux:</span> <code>git config --global core.autocrlf input</code>
+                    </p>
+                </div>
+            </section>
+        </article>
+        <hr>
+        <article>
+            <h2>Basic GIT commands</h2>
+                <ul class="commands">
+                    <li class="li-commands"><code>git config --help</code> This gives you the full menu.</li>
+                    <li class="li-commands"><code>git config -h</code> This gives you summary of commands.</li>
+                    <li class="li-commands"><code>git init</code> initializes local git repository - go into a folder via command line or
+                        terminal, this creates a .git folder withing a project</li>
+                    <li class="li-commands"><code>git add [file_name]</file></code> adds/creates a file or files to the index in the staging
+                        area</li>
+                    <li class="li-commands"><code>git status</code> check status of working tree (ie. check status within staging area to
+                        see what is ready for commit0</li>
+                    <li class="li-commands"><code>git commit</code> commit changes in index</li>
+                    <li class="li-commands"><code>git push</code> takes work from local and pushes to remote repository (such as github)
+                    </li>
+                    <li class="li-commands"><code>git pull</code> pulls the latest version from remote repository (ie. making a copy to your
+                        local drive)</li>
+                    <li class="li-commands"><code>git clone</code> clone/create a copy of repository into a new directory (ie. You want to
+                        create something based off of existing code, so you clone the original source and work on it in your own space)</li>
+                </ul>
+        </article>
+        <hr>
+    </main>
+    </div>
+</body>
+
+</html>
