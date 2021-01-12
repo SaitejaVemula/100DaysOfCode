@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /** BACKGROUND IMAGE PROPERTIES **/
+    background-image: 
+        linear-gradient(to bottom, rgba(54, 0, 0, 0.8), rgba(5, 5, 5, 0.4)),
+        url("images/bkg.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100vw; min-height: 100vh;
+    /** BACKGROUND IMAGE PROPERTIES **/
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(22, 2, 2, 0.75);
+    width: 60%;
+    margin: 0 auto;
+    padding: 14px 20px;
+}
+
+.brand h1 {
+    font-size: 2rem;
+    font-family: 'Cormorant SC', serif;
+    text-transform: uppercase;
+    /** TEXT GRADIENT **/
+    background-color: rgba(14, 12, 12, 0.7);
+    background: -webkit-linear-gradient(#f5163f, #a7a4a4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /** TEXT GRADIENT **/
+}
+
+.nav-link-cont {
+    display: flex;
+    width: 35%;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-size: 1.1rem;
+    color: rgb(201, 201, 201);
+    font-family: 'Spectral', serif;
+    /* padding: 14px 20px; */
+    text-align: right;
+}
+
+.nav-link:hover {
+    text-shadow: 2px 2px 4px white;
+}
+
+.upper-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /** BACKGROUND IMAGE (CENTERED) **/
+    background-image: 
+        linear-gradient(to bottom, rgba(15, 14, 14), rgba(5, 5, 5, 0.7)),
+        url("images/upper-cont.png");
+    background-size: cover;
+    background-position: center;
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+    /** BACKGROUND IMAGE (CENTERED) **/
+
+}
+
+.upper-heading {
+    margin: 24px;
+}
+
+.upper-cont h1, .upper-cont h2 {
+    text-align: center;
+}
+
+.upper-cont h1 {
+    font-family: 'Cormorant SC', serif;
+    width: fit-content;
+    font-weight: 700;
+    font-size: 3.6rem;
+    letter-spacing: 4px;
+    margin: 0 auto 40px;
+
+    /** TEXT GRADIENT **/
+    background-color: rgba(14, 12, 12, 0.7);
+    background: -webkit-linear-gradient(#f5163f, #333333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /** TEXT GRADIENT **/
+}
+
+.upper-cont h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: rgb(165, 117, 126);
+    font-size: 1.7rem;
+}
+
+.btn-cont {
+    margin-top: 30px;
+}
+
+.btn-upper {
+    background: #600606;
+    background-image: -webkit-linear-gradient(top, #600606, #000000);
+    border-radius: 5px;
+    color: #EDDADA;
+    font-family: Garamond;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 11px;
+    -webkit-box-shadow: 3px 3px 6px 0 #330d0d;
+    -moz-box-shadow: 3px 3px 6px 0 #330d0d;
+    box-shadow: 3px 3px 6px 0 #330d0d;
+    text-shadow: 1px 1px 2px #FFFFFF;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ .btn-upper:hover {
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #600606);
+    border-radius: 5px;
+    text-decoration: none;
+ }
+
+
+.mid-cont {
+    width: 60%;
+    background-color: rgba(44, 44, 44, 0.8);
+    padding-bottom: 26px;
+}
+
+.mid-cont h2, .card {
+    margin: 0 14px;
+}
+
+.mid-cont h2 {
+    text-align: center;
+    color: rgb(172, 172, 172);
+    font-family: 'Cormorant Garamond', serif;
+    padding: 18px 0;
+}
+
+.card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    border: 2px solid #222222;
+    cursor: pointer;
+    margin-top: 14px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 8px rgb(255, 168, 168);
+    transform: scale(1.15);
+    transition: transform .4s;
+}
+
+.adrian {
+    background-image: 
+        linear-gradient(to bottom, rgba(15, 14, 14), rgba(5, 5, 5, 0.7)),
+        url("images/adrian-brand-432x444.png");
+}
+
+.kamilah {
+    background-image: 
+        linear-gradient(to bottom, rgba(15, 14, 14), rgba(5, 5, 5, 0.7)),
+        url("images/kamilah-brand-432x444.png");
+}
+
+.jax {
+    background-image: 
+        linear-gradient(to bottom, rgba(15, 14, 14), rgba(5, 5, 5, 0.7)),
+        url("images/jax-brand-432x444.png");
+}
+
+.lily {
+    background-image: 
+        linear-gradient(to bottom, rgba(15, 14, 14), rgba(5, 5, 5, 0.7)),
+        url("images/lily-brand.png");
+}
+
+.card-img {
+    border-radius: 50%;
+    width: 245px;
+    background-image: 
+        linear-gradient(to bottom, rgb(43, 18, 18), rgb(0, 0, 0));
+}
+
+.card h3 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    color: #ffd0d0;
+    padding: 13px 0;
+}
+
+/************* HOVER CARD ANIMATION ****************/
+
+.bot-cont {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: 
+        linear-gradient(to bottom, rgba(15, 14, 14, .8), rgba(0, 0, 0)),
+        url("images/bot-bkg-1872x1272.png");
+    background-size: cover;
+    background-position: top;
+    width: 60%;
+    height: 600px;
+    margin: 0 auto;
+}
+
+
+.moving-card {
+    background-image: linear-gradient(to bottom right, rgb(78, 4, 4), rgb(31, 1, 8));
+    color: white;
+    font-size: 24px;
+    padding: 20px 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 1s;
+}
+
+.moving-card:hover {
+    width: 300px;
+    box-shadow: 0 20px 60px -10px rgba(141, 64, 33, 0.25);
+}
+
+.bot-img {
+    position: absolute;
+    width: 200px; height: 200px;
+    border: 0px solid rgb(56, 3, 3);
+    border-radius: 4px;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    z-index: 2;
+    transition: transform 0.4s, border-radius 0.2s, left 0.2s, border 0.1s;
+}
+
+#left-bot-img {
+    background: url('images/blood-foundation-500x500.png') no-repeat center center;
+    background-size: cover;
+}
+
+#right-bot-img {
+    background: url('images/give-blood-500x500.png') no-repeat center center;
+    background-size: cover;
+}
+
+.moving-card:hover .bot-img {
+    left: 50px;
+    border: 3px solid rgb(43, 38, 37);
+    border-radius: 50px;
+    transform: scale(0.65) translateY(-170px);
+}
+
+.bot-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.moving-card p {
+    position: relative;
+    opacity: 0%;
+    bottom: -100px;
+    transition: opacity 0.2s 0.2s, bottom 0.2s 0.2s;
+    text-align: center;
+    visibility: hidden;
+}
+
+.moving-card:hover p {
+    bottom: 0;
+    opacity: 100%;
+    visibility: visible;
+    font-weight: 700;
+
+    /** TEXT GRADIENT **/
+    background-color: rgba(14, 12, 12, 0.7);
+    background: -webkit-linear-gradient(#d6abb3, #747474);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /** TEXT GRADIENT **/
+}
+
+.bot-desc a {
+    color: rgb(201, 201, 201);
+    font-size: 1.2rem;
+    height: auto;
+    padding-top: 13px;
+}
+
+.bot-desc a:hover {
+    text-decoration: underline;
+}
+
+/************* HOVER CARD ANIMATION ****************/
