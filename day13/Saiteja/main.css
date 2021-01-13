@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(210, 230, 252);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 40px;
+    letter-spacing: 5px;
+    margin-bottom: 40px;
+}
+
+.graphs {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 4px;
+    min-width: 200px;
+    width: 50vw;
+    max-width: 950px;
+    background: rgb(234, 250, 253);
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: flex-end;
+    box-shadow: 40px 40px 120px rgba(0,0,0,0.1);
+}
+
+.bar {
+    height: 300px;
+    width: 40px;
+    border-radius: 4px;
+    background: rgb(124, 204, 236);
+    margin: 0 5px;
+    flex: 1 1 auto;
+
+}
+
+.bar1 { animation: grow1 1s ease-in-out 0s infinite alternate; }
+.bar2 { animation: grow2 2s ease-in-out 0.2s infinite alternate; }
+.bar3 { animation: grow2 0.5s ease-in-out 2s infinite alternate; }
+.bar4 { animation: grow1 0.8s ease-in-out 0s infinite alternate; }
+.bar5 { animation: grow2 5s ease-in-out 0.7s infinite alternate-reverse both; }
+.bar6 {
+    visibility: hidden;
+    width: 0;
+    margin: 0;
+}
+
+@keyframes grow1 {
+    from {
+        height: 20%;
+    } to {
+        height: 100%;
+    }
+}
+
+@keyframes grow2 {
+    from {
+        height: 30%;
+    } to {
+        height: 78%;
+    }
+}
