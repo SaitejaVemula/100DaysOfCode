@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 14 Work</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Syne:wght@700;800&display=swap");
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #050505;
+            height: 100vh;
+            font-family: "Syne", Arial, Helvetica, sans-serif;
+            padding: 30px;
+            color: #555;
+            text-transform: uppercase;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        h1 {
+            position: absolute;
+            writing-mode: vertical-lr;
+            color: rgba(255, 255, 255, 0.2);
+            font-size: 20px;
+            top: 50px;
+            right: 20px;
+        }
+
+        h1::after {
+            content: "";
+            position: absolute;
+            height: 40px;
+            width: 1px;
+            right: 50%;
+            bottom: -60px;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style-type: none;
+        }
+
+        li {
+            margin: 20px auto;
+        }
+
+        a {
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: 900;
+            color: #fff;
+            text-align: center;
+            position: relative;
+            transition: color 0.3s;
+        }
+
+        a::after {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 50%;
+            width: 0%;
+            height: 2px;
+            background: linear-gradient(to right,
+                    rgb(233, 39, 39),
+                    rgb(206, 44, 133));
+            transition: width 0.2s;
+        }
+
+        a:hover {
+            color: #333;
+        }
+
+        a:hover::after {
+            width: 120%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Participants</h1>
+    <ul>
+        <!-- <li><a href="./Saiteja/">Saiteja</a></li> -->
+    </ul>
+</body>
+
+</html>
