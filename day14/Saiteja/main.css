@@ -28,16 +28,25 @@ h1 {
     grid-template-columns: repeat(10, 1fr);
     justify-items: stretch;
     align-items: stretch;
-    grid-gap: 1px;
+    grid-gap: 2px;
 }
 
 .cell {
-    border-radius: 4px;
-    background: #eee;
-    border: 1px solid #ccc;
+    /* border-radius: 4px; */
+    background: #ddd;
 }
 
 .cell.selected {
-    background: #222;
+    background: linear-gradient(to bottom right, #777, #111);
 }
 
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background: linear-gradient(to bottom right, #777, #111);
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 2px solid #111;
+}
