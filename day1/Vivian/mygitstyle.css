@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Source Code Pro', 'Lucida Sans Typewriter', monospace;
+    background-color: rgb(233, 226, 208)
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2rem;
+    margin: auto;
+    padding: 25px;
+    color:seagreen;
+}
+a:hover {
+    color: rgb(27, 49, 44);
+}
+p {
+    padding: 5px 15px;
+}
+p + p {
+    margin-top: 10px;
+}
+h1, h2, h3 {
+    text-align: center;
+    margin: 1.5rem 0;
+}
+h1 {
+    text-transform:uppercase;
+}
+article {
+    margin: 0 auto;
+    padding: 5px 25px;
+    width: 70%;
+}
+section {
+    margin: 2rem;
+}
+code {
+    background-color: lightgreen;
+    padding: 3px 5px;
+}
+#details1,
+#show1,
+#hide1:target {
+    display: none;    
+}
+#hide1:target + #show1,
+#hide1:target ~ #details1 {
+    display: inherit; 
+}
+#details2,
+#show2,
+#hide2:target {
+    display: none;    
+}
+#hide2:target + #show2,
+#hide2:target ~ #details2 {
+    display: inherit; 
+}
+#details3,
+#show3,
+#hide3:target {
+    display: none;    
+}
+#hide3:target + #show3,
+#hide3:target ~ #details3 {
+    display: inherit; 
+}
+#details4,
+#show4,
+#hide4:target {
+    display: none;    
+}
+#hide4:target + #show4,
+#hide4:target ~ #details4 {
+    display: inherit; 
+}
+
+.wrapper {
+    margin-bottom: 100px;
+}
+.bold-text {
+    font-weight: bold;
+}
+ul {
+    list-style: square;
+    padding: 0 2rem;
+}
+li {
+    margin: 1.5rem;
+}
+.commands {
+    list-style: none;
+}
+.li-commands {
+    margin: 2rem;
+}
+hr { 
+    width: 55%;
+    border:1px dotted black;
+    margin: 2rem auto;
+}
