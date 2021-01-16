@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Day 15</title>
-    <script async defer src="main.js"></script>
+    <title>Day 16</title>
     <style>
         * {
             margin: 0;
@@ -48,6 +47,7 @@
             font-weight: 700;
         }
     </style>
+    <script defer async src="./app.js"></script>
 </head>
 
 <body>
@@ -55,15 +55,26 @@
     <div class="question">
         <h1>Problem Statement</h1>
         <p>
-            You're given an array of size N, and number X, capacity C, and position P... you have to create functions
-            for insertion and delete on array.
-            <code>insertIntoArray(N, X, C, P) and deleteFromArray(N, X)</code>
-            Note: Array size is fixed, if capacity is full you can not insert into it. and for delete function you can't
-            use position. <br>
-            Note: Don't use inbuilt methods <br>
-            Example : <br>
-            <span>Input : </span> arr -> [10,20,30,40,50,60] X->70 Capactiy &rarr; 7 and position is 3 <br>
-            <span>Output : </span> [10,20,70,30,40,50,60]
+            Given an array of integers nums and an integer target, return indices of the two numbers such that they add
+            up to
+            target.
+            You may assume that each input would have exactly one solution, and you may not use the same element twice.
+            You can return the answer in any order.
+            <code>
+                findIndices(arr, target)
+            </code>
+            <span>Input:</span> nums = [2,7,11,15], target = 9 <br>
+            <span>Output: </span> [0,1] <br>
+            <span>Output: </span> Because nums[0] + nums[1] == 9, we return [0, 1]. <br>
+
+            <span>Input:</span> nums = [3,2,4], target = 6 <br>
+            <span>Output: </span> [1,2] <br>
+
+            <span>Input:</span> nums = [3,3], target = 6 <br>
+            <span>Output: </span> [0,1] <br>
+
+            2 &lt;= nums.length &lt;=10^3 -10^9 &lt;=nums[i] &lt;=10^9 -10^9 &lt;=target &lt;=10^9 Only one valid answer
+            exists.
         </p>
     </div>
 </body>
