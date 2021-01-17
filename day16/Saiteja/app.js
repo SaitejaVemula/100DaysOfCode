@@ -25,7 +25,7 @@ function findIndices(arr, target) {
     for(let i = 0; i<arr.length; i++) {
         let difference = target - arr[i];
         
-        if(arr.indexOf(difference)!== -1 && arr[i] !== difference) {
+        if(arr.indexOf(difference)!== -1 && arr[i] !== difference ) {
             return [i, arr.indexOf(difference)];
         }
         
