@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, nav, footer, main, ul {
+    display: flex;
+}
+
+body, nav, footer {
+    justify-content: space-between;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+ul {
+    list-style: none;
+    
+}
+
+li {
+    display: block;
+}
