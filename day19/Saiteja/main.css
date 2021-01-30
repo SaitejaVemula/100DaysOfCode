@@ -12,18 +12,97 @@ body, nav, footer {
     justify-content: space-between;
 }
 
+nav, footer {
+    flex-wrap: wrap;
+}
+
 body {
     width: 100vw;
     height: 100vh;
     flex-direction: column;
-    /* justify-content: space-between; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background: url(./moon.jpg) no-repeat center center, #000;
+    background-size: contain;
 }
 
 ul {
     list-style: none;
-    
 }
 
 li {
     display: block;
+}
+
+nav {
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav li, #logo { cursor: pointer; }
+
+nav > * {
+    margin: 10px 0;
+}
+
+nav li:not(:first-child, :last-child) {
+    margin: 0 10px;
+}
+
+nav li:first-child {
+    margin-right: 10px;
+}
+
+nav #logo {
+    margin-right: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.buttons li{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+main {
+    align-self: center;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.container button {
+    margin-top: 20px;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    backdrop-filter: blur(5px);
+}
+
+main h1 {
+    font-size: calc(35px + 2vw);
+}
+
+footer {
+    padding: 10px 20px;
+    font-size: 8px;
+    text-transform: uppercase;
+    color: #444;
+}
+
+footer p {
+    margin: 5px 0;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+footer p:first-child {
+    margin-right: 20px;
 }
