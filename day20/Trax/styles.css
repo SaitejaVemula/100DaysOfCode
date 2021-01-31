@@ -1,0 +1,80 @@
+*
+{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 20px;
+    min-height: 10vh;
+}
+
+ul
+{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 20vw;
+    margin-right: auto;
+}
+
+li
+{
+    text-decoration: none;
+    text-emphasis-style: none;
+}
+
+main
+{
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 5vw;
+}
+
+
+
+.card
+{
+    width: 30%;
+    background-color: rgb(255, 0, 0);
+    flex-basis: 1;
+    flex-grow: 1;
+}
+
+article
+{
+    border-bottom: 0;
+}
+
+
+section
+{
+    background-color: rgb(194, 58, 34);
+    padding: 20%;
+}
+
+article, section
+{
+    font-family: 'Archivo', sans-serif;
+    color: white;
+    /* text-align: center; */
+    padding: 10px;
+    font-size: 2em;
+}
+
+.image
+{
+    flex-basis: 1;
+}
+
