@@ -3,17 +3,6 @@ body
   font-size: 1.125rem;
   color: #707070;
   margin: 0;
-  background-color: pink;
-}
-
-@media (max-width: 600px)
-{
-    .columns
-    {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
 }
 
 
@@ -91,6 +80,16 @@ p
   width: 70%;
 }
 
+
+@media (max-width: 600px)
+{
+    .columns
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 
 @media (max-width: 600px)
 {
