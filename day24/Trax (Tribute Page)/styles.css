@@ -140,3 +140,11 @@ div[class="last-text"]>p
 {
     margin: 0;
 }
+
+@media (max-width: 480px)
+{
+    html
+    {
+        font-size: 31.3%; 
+    }
+}
