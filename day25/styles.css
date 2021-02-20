@@ -1,0 +1,159 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    font-family: 'Syne', sans-serif;
+    color: white;
+}
+
+.parent-container
+{
+    width: 80vw;
+    height: 100%;
+    margin: 10vh auto;
+    border: 2px solid red;
+    display: flex;
+    justify-content: flex-start;
+    background: url(pexels-suzy-hazelwood-1629236.jpg);
+}
+
+
+
+img
+{
+    max-width: 30%;
+    object-fit: contain;
+}
+
+
+.text-containers
+{
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto;
+    grid-gap: auto auto;
+    justify-content: space-between;
+    align-items: space-evenly;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.text-children
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.text-children-3lines, .text-children-2lines
+{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.text-children-button
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.text-children-2lines
+{
+    justify-content: flex-start;
+    
+}
+
+
+.text-children-button, .text-children-6-lines
+{
+    margin-right: 5%;
+}
+
+button
+{
+    width: 30%;
+    height: 15%;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+    border: 1px solid white;
+    font-family: 'Syne', sans-serif;
+    font-weight: 900;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.1rem;
+}
+
+.bold
+{
+    font-size: 4rem;
+    font-family: 'Syne', sans-serif;
+    font-weight: 2000;
+}
+
+h2{
+    font-size: 3rem;
+}
+
+h2, h2[class="bold"]
+{
+    letter-spacing: 0.2rem;
+}
+
+.padding
+{
+    margin: 0 0.5%
+}
+
+
+div[class="text-children-6-lines"] > div
+{
+    margin: 100% 0;
+    letter-spacing: 20rem;
+}
+
+.Head-Text
+{
+    
+    font-weight: 900;
+    margin-bottom: 0.8rem;
+}
+
+.Main-Text
+{
+    font-weight: 900;
+}
+
+@media (max-width:320px)
+{
+    
+    .parent-container
+    {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    img
+    {
+        
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    .text-containers
+    {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
