@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
 *, *::before, *::after
 {
     margin: 0;
@@ -8,6 +10,7 @@
 html
 {
     font-size: 62.5%;
+    font-family: 'Arimo', sans-serif;
 }
 
 body
@@ -58,6 +61,11 @@ nav li
     margin-top: 3rem;
 }
 
+nav li:hover
+{
+    text-decoration: underline;
+}
+
 nav button
 {
     width: 10rem;
@@ -73,7 +81,7 @@ nav button
 main
 {
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +109,7 @@ img
 main div
 {
     width: 40%;
-    height: 100%;
+    height: 35%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,6 +145,7 @@ section:nth-child(2)
 {
     width: 70%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
@@ -162,9 +171,9 @@ div button
 
 .google-offerings
 {
-    
-    margin-top: 0rem;
+    margin-top: 1rem;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .language-list
@@ -173,7 +182,14 @@ div button
     padding: 0;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
+
+.language-list li
+{
+    padding: 0 0.5rem;
+}
+
 
 .material-icons
 {
@@ -185,6 +201,11 @@ div button
 {
     background-color: #1a73e8;
     color: white;
+}
+
+.signinbutton:hover
+{
+    background-color:#3e85e2;
 }
 
 #Google
@@ -206,4 +227,58 @@ svg
 input
 {
     font-size: 2rem;
+}
+
+footer
+{
+    height: 15%;
+    width: 100%;
+    padding: 0.3em 1em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: rgb(212, 212, 212);
+    font-size: 1.6rem;
+    color:rgb(99, 99, 99);
+}
+
+footer>section:nth-child(1)
+{
+    padding: 0.5em 0;
+}
+
+
+footer>section:nth-child(2)
+{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(136, 136, 136);
+}
+
+footer>section:nth-child(3)
+{
+    padding: 0.5em 0;
+    width: 100%;
+}
+
+footer ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+footer ul li
+{
+    padding: 0 0.5em;
+}
+
+footer a
+{
+    text-decoration: none;
 }
