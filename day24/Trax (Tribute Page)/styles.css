@@ -1,0 +1,150 @@
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%; 
+}
+
+img
+{
+    width: 95%;
+    border: 2px solid rgb(0, 132, 255);
+}
+
+.container
+{
+    background-color: rgb(192, 185, 185);
+    height: 100%;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    margin-top: 5vh;
+    border: 2px solid black;
+}
+
+div.container>div
+{
+    text-align: center;
+}
+
+.first-child
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.second-child
+{
+    border: 1px solid rgb(138, 138, 138);
+    margin: 2%;
+}
+
+.fourth-child
+{
+    background: rgb(177, 173, 173);
+}
+
+.fifth-child
+{
+    font-size: 2rem;;
+}
+
+h2
+{
+    text-transform: uppercase;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5rem;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 0 20%;
+}
+h3, ol
+{
+    text-align: left;
+}
+
+h3{
+    padding: 0 6%;
+    margin-bottom: 0;
+}
+
+.h4-text, h4
+{
+    margin-top: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+}
+
+h4
+{
+    font-size: 3rem;
+    padding: 5%;
+}
+
+ol
+{
+    margin-top: 1%;
+    padding: 0 30px;
+}
+
+li
+{
+    margin: 0.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+span
+{
+    font-weight: bold;
+}
+
+p{
+    font-size: 2rem;
+    padding: 1% 5%;
+    font-weight: bold;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: red;
+}
+
+a:hover
+{
+    color:rgb(4, 129, 56);
+}
+
+a:active
+{
+    color: blue;
+}
+
+.last-text
+{
+    margin: 0 17vw;
+}
+
+div[class="last-text"]>p
+{
+    margin: 0;
+}
+
+@media (max-width: 480px)
+{
+    html
+    {
+        font-size: 31.3%; 
+    }
+}
